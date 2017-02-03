@@ -8,21 +8,12 @@
 	<meta name="author" content="" />
 	<link rel="stylesheet" type="text/css" href="static/style.css" media="screen" />
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
-	<script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-84273940-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-	<title>The Buriak Group Data Plotters</title>
+	<title>The Bottle Plotters</title>
 
 </head>
 <body>
     <div id="wrapper">
-        <a href="./"><h1>The Buriak Group Data Plotters</h1></a>
+        <a href="./"><h1>The Bottle Plotter</h1></a>
         <div id="navcontainer">
             <ul id="navlist">
                 <li><a href="ash">ASH</a></li>
