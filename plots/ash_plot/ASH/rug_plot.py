@@ -1,9 +1,40 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
+Rug Plot Demonstration Script.
 
-This is a temporary script file.
+This script demonstrates how to create a rug plot in conjunction with a
+distribution plot (histogram and Kernel Density Estimate) using Matplotlib
+and Seaborn.
+
+The script performs the following main steps:
+1.  Generates a sample dataset of 1000 points from a normal distribution
+    (mean=10, std_dev=2).
+2.  Sets up two vertically stacked subplots that share a common x-axis:
+    a.  The top subplot (`a`) is used to display the distribution of the data
+        using `seaborn.distplot()`.
+    b.  The bottom subplot (`a2`) is used to display the rug plot, where
+        individual data points are marked with short vertical lines ('|')
+        along the x-axis. This subplot has its y-ticks removed.
+3.  Applies styling using `seaborn` (`white` style, `poster` context).
+4.  Includes an option (`despline = True`) to customize the plot's appearance
+    by removing spines and ticks. If `despline` is True:
+    -   The top plot (`a`) has its left and bottom spines removed, and y-ticks
+        are hidden.
+    -   The bottom rug plot (`a2`) has its left spine removed.
+    If `despline` is False, it uses a more standard `seaborn.despine()` behavior.
+5.  The x-axis tick labels of the top plot (`a`) are hidden, as the shared
+    x-axis is primarily represented by the rug plot below it.
+
+The script is intended as an example of creating such composite plots and
+showcases some customization options available with Seaborn and Matplotlib.
+It does not define any reusable functions or classes but directly executes
+the plotting procedure.
 """
+# Original header comment:
+# Spyder Editor
+#
+# This is a temporary script file.
+
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
